@@ -2,6 +2,9 @@
 
 html, body {
   height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 body {
@@ -17,11 +20,33 @@ body {
 
 .modal {
   background: white;
-  width: 480px;
+  max-height: 260px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 0 1 auto;
+  flex-direction: column;
+  padding: 10px;
+}
+*{
+  flex-flow: column wrap;
 }
 
+.top{
+  display: inherit;
+  align-items: flex-start;
+}
+
+.two{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: auto;
+  flex-flow: row wrap;
+  margin-bottom: 10px;
+}
 .icon {
   color: royalblue;
   font-size: 26px;
@@ -33,8 +58,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
+  flex-shrink: 0;
+  margin-top: 15px;
 }
 
+.rest{
+  display: flex;
+  max-width: 450px;
+  align-content: end;
+  margin-top: 18px;
+  margin-left: 10px;
+  gap: 10px;
+}
+
+.header{
+  text-wrap: nowrap;
+  font-size: large;
+  align-self: center;
+  margin-right: auto;
+}
 .close-button {
   background: #eee;
   border-radius: 50%;
@@ -48,14 +91,35 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+  flex-shrink: 0;
+  margin: 0px 15px 05px;
 }
+
 
 button {
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 8px;
+
 }
 
+
+.text{
+  display: flex;
+  align-self: flex-end;
+/*  margin: auto auto auto 70px;*/
+  text-align: left;
+  text-wrap: wrap;
+  width: auto;
+}
+
+.bottom{
+  display: flex;
+  justify-items: flex-start;
+  gap: 8px;
+  flex-flow: row wrap;
+  margin-top: 10px;
+}
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;

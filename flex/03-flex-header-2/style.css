@@ -6,43 +6,76 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  display: flex;
+  flex: auto;
+
 }
 
 .header {
+  display: inherit;
   background: white;
+  flex: inherit;
+  flex-basis: auto;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
 }
 
 .profile-image {
+  display: inherit;
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  flex-shrink: 0;
+  margin: 8px 16px;
 }
 
 .logo {
+  display: inherit;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin: 8px 16px;
 }
 
 button {
+  display: inherit;
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  height: 35px;
+  flex: 0 0 auto;
+  margin: 8px 16px;
+}
+
+.right{
+  display: inherit;
+  margin-left: auto;
+  align-items: center;
+  justify-content: flex-end;
+  flex: inherit;
+}
+
+.left{
+  display: inherit;
+  margin-right: auto;
+  align-items: center;
+  flex: inherit;
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 8px 16px;
 }
 
 ul {
+  display: inherit;
   list-style-type: none;
+  padding: 0px;
 }
